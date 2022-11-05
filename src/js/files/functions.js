@@ -425,6 +425,7 @@ export function menuInit() {
 export function menuOpen() {
 	bodyLock();
 	document.documentElement.classList.add("menu-open");
+	document.querySelector('.menu__body').classList.add("menu-open");
 }
 export function menuClose() {
 	bodyUnlock();
