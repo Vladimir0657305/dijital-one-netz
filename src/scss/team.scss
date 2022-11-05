@@ -1,0 +1,32 @@
+
+.team-body__container {}
+
+.team-body__title {
+    color: #007bff;
+    @include adaptiveValue("font-size", 40, 26);
+    font-weight: 900;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-body__text {
+    width: 80%;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.7;
+    color: gray;
+}
+
+.team-body__items {}
+
+.team-item {}
+
+.team-item__img {}
+
+.team-item__title {}
+
+.team-item__text {}
