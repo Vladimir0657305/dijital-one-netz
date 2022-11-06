@@ -1,5 +1,10 @@
 
-.team-body__container {}
+.team-body__container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+}
 
 .team-body__title {
     color: #007bff;
@@ -11,22 +16,183 @@
 }
 
 .team-body__text {
-    width: 80%;
+    width: 60%;
     font-size: 1.25rem;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     text-align: center;
     line-height: 1.7;
     color: gray;
+    margin: 0 auto;
 }
 
-.team-body__items {}
+.team-body__items {
+    margin-top: 50px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-auto-rows: 1fr; */
+}
 
-.team-item {}
+.team-body__anim {}
 
-.team-item__img {}
+.team-item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+    // cursor: pointer;
+}
 
-.team-item__title {}
+.team-item__img {
+    position: relative;
+    padding: 0px 0px 90% 0px;
+    margin: 0px 0px 20px 0px;
+    &:hover {
+        .team-item__social {
+            display: block;
+            transform: translateX(0%);
+            transition: all .8s  ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & li {
+                height: 35px;
+                &:first-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+            
+        }
+    & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        &:hover {
 
-.team-item__text {}
+        }
+    }
+}
+
+.team-item__title {
+    color: #000;
+    margin: 0;
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: .5rem;
+
+}
+.team-item__social {
+    width: 45px;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+    background: #007bff;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-110%);
+    display: none;
+    transition: .8s all ease;
+    & ul {
+        & li {
+            list-style: none;
+            font-family: 'icomoon';
+            padding: 5px;
+            & a {
+                display: inline-block;
+                padding: 5px;
+                color: #fff;
+                text-decoration: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.team-item__text {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    padding: .5rem;
+}
+
+._anim-show {
+    transform: translate(0px, 105%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+
+._anim-show._activetextmain,
+._activetextmain ._anim-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+._anim-show-sequential {
+    transform: translate(0px, 105%);
+    opacity: 0;
+    // transition: all 0.8s ease 0s;
+}
+
+.team-body__anim._activetextmain {
+    .team-item._temp1 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0s;
+    }
+
+    .team-item._temp2 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.2s;
+    }
+
+    .team-item._temp3 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.4s;
+    }
+
+    .team-item._temp4 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.6s;
+    }
+
+    .team-item._temp5 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.8s;
+    }
+    .team-item._temp6 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 1.0s;
+    }
+    .team-item._temp7 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 1.2s;
+    }
+    .team-item._temp8 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 1.4s;
+    }
+}

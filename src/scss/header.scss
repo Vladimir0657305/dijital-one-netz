@@ -229,11 +229,9 @@
 		}
 		&::before {
 			top: 0;
-			// background-color: var(--iconMenuBackgroundColor);
 		}
 		&::after {
 			bottom: 0;
-			// background-color: var(--iconMenuBackgroundColor);
 		}
 		span {
 			top: calc(50% - rem(1));
@@ -307,17 +305,17 @@
 .notTop {
 	animation: menu-in-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-@keyframes menu-in-bottom {
-	0% {
-		transform: background-color;
+// @keyframes menu-in-bottom {
+// 	0% {
+// 		transform: background-color;
 		
-	}
+// 	}
 
-	100% {
-		transform: background-color;
+// 	100% {
+// 		transform: background-color;
 		
-	}
-}
+// 	}
+// }
 
 .menu-open .nav {
 	--o: 1;

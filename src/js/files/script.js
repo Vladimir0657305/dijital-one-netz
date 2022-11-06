@@ -47,17 +47,18 @@ if (animItems.length > 0) {
     function animOnScroll() {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
-            const animItemHeight = animItem.offsetHeight;
-            const animItemOffset = offset(animItem).top;
+            const animItemHeight = animItem.offsetHeight; // получаем высоту объекта
+            const animItemOffset = offset(animItem).top; // позиция объекта относительно верха
             const animStart = 4;
 
-            let animItemPoint = window.innerHeight - animItemHeight / animStart;
-            if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;  // высота окна броузера - минус высоту объекта делим на коэф.
+            if (animItemHeight > window.innerHeight) { // проверяем чтобы объект не был больше окна броузера
+                animItemPoint = window.innerHeight - window.innerHeight / animStart; // если да, то от высоты окна броузера минусуем высоту окна броузера, деленную на коэф.
             }
 
-            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_activetextmain');
+            // если проскролили больше чем позиция объека минус точка старта, но меньше чем позиция объекта плюс его высота
+            if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('_activetextmain'); 
             } else {
                 if (!animItem.classList.contains('_anim-no-hide')) {
                     animItem.classList.remove('_activetextmain');
