@@ -77,3 +77,23 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 300);
 }
+
+// Portfolio Filter Start ============================================================================
+var filterBox = document.querySelectorAll('.box');
+var portfolioButton = document.querySelectorAll('.portfolio-button');
+document.querySelector('.portfolio-nav').addEventListener('click', event => {
+    if (event.target.tagName !== 'BUTTON') return false;
+    let filterClass = event.target.dataset['filter'];
+    let portfolioButtonTarget = event.target;
+    
+    portfolioButton.forEach(elem => elem.classList.remove('portfolioActive'))
+    portfolioButtonTarget.classList.add('portfolioActive');
+
+    filterBox.forEach( elem => {
+        elem.classList.remove('hide');
+        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+            elem.classList.add('hide');
+        }
+    })
+});
+// Portfolio Filter End ==============================================================================

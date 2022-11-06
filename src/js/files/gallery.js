@@ -38,6 +38,8 @@ import '@scss/libs/gallery/lightgallery.scss';
 
 // Запуск
 const galleries = document.querySelectorAll('[data-gallery]');
+console.log(galleries);
+// const galleries = document.querySelectorAll('.portfolio-cover');
 if (galleries.length) {
 	let galleyItems = [];
 	galleries.forEach(gallery => {
@@ -45,6 +47,7 @@ if (galleries.length) {
 			gallery,
 			galleryClass: lightGallery(gallery, {
 				// plugins: [lgZoom, lgThumbnail],
+				
 				licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
 				speed: 500,
 			})
