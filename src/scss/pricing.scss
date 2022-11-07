@@ -4,6 +4,7 @@
 
 .pricing__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -12,27 +13,32 @@
     color: #007bff;
     font-size: 40px;
     font-weight: 900;
+    padding-top: 4rem;
     margin-bottom: 4rem;
-    padding-top: 50px;
-    margin-bottom: 1rem;
 }
 
 .pricing-body {
     margin-bottom: 3rem;
-    margin-right: -15px;
-    margin-left: -15px;
+    // margin-right: -15px;
+    // margin-left: -15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+    overflow: hidden;
 }
 
 .pricing-block {
     flex: 0 0 330px;
     margin: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .pricing-block__title {
@@ -41,6 +47,7 @@
     font-size: 1.6rem;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -63,11 +70,9 @@
 .pricing-block__list li {
     display: flex;
     margin-bottom: 20px;
-    margin-bottom: 15px;
     line-height: 1.5;
-    text-decoration: line-through;
-    color: #dee2e6;
     color: gray;
+    font-size: 15px;
 }
 
 .icon-check {
@@ -79,4 +84,68 @@
     }
 }
 
-.pricing-block__button {}
+.basic .pricing-block__list {
+    & li:nth-child(3), li:nth-child(4), li:nth-child(5) {
+        & p {
+            color: #dee2e6;
+            text-decoration: line-through;
+        }
+        & span {
+            color: #dee2e6;
+        }
+    }
+}
+.premium .pricing-block__list {
+    & li:nth-child(5) {
+        & p {
+            color: #dee2e6;
+            text-decoration: line-through;
+        }
+        & span {
+            color: #dee2e6;
+        }
+    }
+}
+
+.pricing-block__button {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    vertical-align: middle;
+    // user-select: none;
+    // z-index: 1;
+    margin-top: rem(30);
+    margin-bottom: 3rem;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background 0.3s;
+}
+.pricingBlockButtonFctive {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.pricing-block__anim._activetextmain {
+    .pricing-block._temp1 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0s;
+    }
+
+    .pricing-block._temp2 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.2s;
+    }
+
+    .pricing-block._temp3 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.4s;
+    }
+}

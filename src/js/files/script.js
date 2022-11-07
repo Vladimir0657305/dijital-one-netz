@@ -3,6 +3,8 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+
+// Menu ===========================================================================================
 var headerR = document.querySelector('.header');
 var headerLogo = document.querySelector('.header-logo');
 var headerMenu = document.querySelector('.header-menu');
@@ -39,8 +41,10 @@ function myFunction() {
         iconMenu.style.setProperty('--iconMenuBackgroundColor', "#fff");
     }
 }
+// Menu ===========================================================================================
 
-// Animation
+
+// Animation ======================================================================================
 const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
@@ -77,6 +81,7 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 300);
 }
+// Animation ======================================================================================
 
 // Portfolio Filter Start ============================================================================
 var filterBox = document.querySelectorAll('.box');
@@ -97,3 +102,13 @@ document.querySelector('.portfolio-nav').addEventListener('click', event => {
     })
 });
 // Portfolio Filter End ==============================================================================
+
+// Pricing Start =====================================================================================
+var pricingBlockButton = document.querySelectorAll('.pricing-block__button');
+document.querySelector('.pricing-body').addEventListener('click', event => {
+    if (event.target.tagName !== 'BUTTON') return false;
+    let pricingBlockButtonTarget = event.target;
+    pricingBlockButton.forEach(elem => elem.classList.remove('pricingBlockButtonFctive'));
+    pricingBlockButtonTarget.classList.add('pricingBlockButtonFctive');
+});
+// Pricing End  ======================================================================================
