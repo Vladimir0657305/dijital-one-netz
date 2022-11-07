@@ -38,21 +38,10 @@ import '@scss/libs/gallery/lg-zoom.scss';
 
 // Запуск
 const galleries = document.querySelectorAll('[data-gallery]');
-// const galleries = document.querySelectorAll('.portfolio-cover');
-// const galleries = document.getElementById('portfolio-cover');
-
-console.log(galleries);
-
-// lightGallery(document.getElementById('portfolio-cover'), {
-// 	licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
-// 	speed: 500,
-	
-// })
 
 if (galleries.length) {
 	let galleyItems = [];
 	galleries.forEach(gallery => {
-		console.log(gallery);
 		galleyItems.push({
 			gallery,
 			galleryClass: lightGallery(gallery, {
@@ -64,12 +53,4 @@ if (galleries.length) {
 	});
 	// Добавляем в объект модулей
 	flsModules.gallery = galleyItems;
-	console.log(galleyItems, flsModules);
 }
-
-
-// lightGallery(document.getElementById('portfolio-cover'));
-
-
-
-
