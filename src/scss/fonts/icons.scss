@@ -26,21 +26,36 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-management:before {
+  content: "\e900";
+}
+.icon-financial:before {
+  content: "\e901";
+}
+.icon-insurance:before {
+  content: "\e902";
+}
+.icon-service:before {
+  content: "\e903";
+}
+.icon-market:before {
+  content: "\e904";
+}
+.icon-rocket:before {
+  content: "\e905";
+}
 .icon-search:before {
-	content: "\e986";
+  content: "\e986";
 }
 .icon-facebook:before {
-	content: "\ea90";
+  content: "\ea90";
 }
-
 .icon-instagram:before {
-	content: "\ea92";
+  content: "\ea92";
 }
-
 .icon-twitter:before {
-	content: "\ea96";
+  content: "\ea96";
 }
-
 .icon-linkedin2:before {
-	content: "\eaca";
+  content: "\eaca";
 }

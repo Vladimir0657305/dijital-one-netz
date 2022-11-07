@@ -1,0 +1,118 @@
+.services {
+    background: rgb(245, 245, 245);
+    margin-top: 50px;
+}
+
+.services__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-title {
+    color: #007bff;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 4rem;
+    padding-top: 50px;
+}
+
+.services-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.service-body__anim {
+    flex: 1 0 33.3333%;
+    flex: 1 0 300px;
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 24px;
+}
+
+.services-block__icon {
+    width: 48px;
+    height: 48px;
+    color: #007bff;
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.services-block__title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.services-block__text {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.services-block__button {
+    margin-bottom: 1rem;
+    color: #007bff;
+        font-weight: 400;
+            font-size: 1rem;
+    & a {
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+.services-line {
+    border: 1px solid #dee2e6;
+}
+
+._anim-show-sequential {
+    transform: translate(0px, 105%);
+    opacity: 0;
+    // transition: all 0.8s ease 0s;
+}
+
+.service-body__anim._activetextmain {
+    .services-block._temp1 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0s;
+    }
+
+    .services-block._temp2 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.2s;
+    }
+
+    .services-block._temp3 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.4s;
+    }
+
+    .services-block._temp4 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.6s;
+    }
+
+    .services-block._temp5 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.8s;
+    }
+
+    .services-block._temp6 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 1.0s;
+    }
+}
