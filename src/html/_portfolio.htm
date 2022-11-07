@@ -1,28 +1,31 @@
 <section class="portfolio">
 <div class="portfolio__container __container">
-    <div class="portfolio-title">
-        <h2>Portfolio</h2>
+    <div class="portfolio-title _anim-items ">
+        <h2 class="_anim-show">Portfolio</h2>
     </div>
-    <nav class="portfolio-nav">
+    <nav class="portfolio-nav _anim-items _anim-show">
         <ul>
-            <li><button  data-filter='all' class="portfolio-button portfolioActive">All</button></li>
+            <li><button  data-filter='all' class="portfolio-button portfolioActive ">All</button></li>
             <li><button data-filter="web" class="portfolio-button">Web</button></li>
             <li><button data-filter="design" class="portfolio-button">Design</button></li>
             <li><button data-filter="brand" class="portfolio-button">Brand</button></li>
         </ul>
     </nav>
 
-    <div class="portfolio-cover" data-gallery>
+    <div class="portfolio-cover" id="portfolio-cover" >
+        
 
-        <div class="portfolio-item  " >
-            <img data-src="../img/2842.jpg" class="gallery__image" src="../img/2842.jpg" alt="">
-            <div class="box web " >
-                <!-- <a data-src="../img/2842.jpg" class="gallery__image"></a> -->
-                <img data-src="../img/2842.jpg" class="gallery__image"  src="../img/2842.jpg" alt=""  data-sizes="(min-width: 40em) 80vw, 100vw">
+        <div  class="portfolio-item  " >
+            <!-- <a href="../img/a42.jpg" data-src="../img/a42.jpg">
+                <img src="../img/xperson_2.jpg.pagespeed.ic.tEQmGoVJYm.webp">
+            </a> -->
+            <div  class="box web " >
+                <a   href="../img/a42.jpg" data-src="../img/a42.jpg">
+                    <img src="../img/xperson_2.jpg.pagespeed.ic.tEQmGoVJYm.webp" >
+                </a>
                 <span class="icon-search"></span>
             </div>
         </div>
-
         
         <div class="portfolio-item  ">
             <div class="box brand">
@@ -103,4 +106,19 @@
         
     </div>
 </div>
+
+
+<div  class="gallery__image">
+    <a  href="../img/a43.jpg" data-src="../img/a43.jpg">
+        <img  src="../img/a42.jpg" class=" gallery-test">
+    </a>
+    <a href="../img/xperson_3.jpg.pagespeed.ic.RShAAJX8ye.webp" >
+        <img  src="../img/xperson_4.jpg.pagespeed.ic.zElXCyQBvP.webp" class=" gallery-test">
+    </a>
+    
+</div>
+
+
+
+
 </section>
