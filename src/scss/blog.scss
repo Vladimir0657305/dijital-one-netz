@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .blog-title {
@@ -21,6 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    overflow: hidden;
 }
 
 .blog-body__item {
@@ -30,6 +32,7 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .blog-body__img img {

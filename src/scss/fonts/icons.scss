@@ -25,6 +25,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-envelope:before {
+  content: "\e907";
+}
 .icon-check:before {
   content: "\e906";
 }
@@ -60,4 +63,10 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
 }
