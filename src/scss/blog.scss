@@ -1,5 +1,3 @@
-.blog {}
-
 .blog__container {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +19,17 @@
 .blog-body__items {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    // width: 100%;
     overflow: hidden;
 }
 
 .blog-body__item {
     // flex: 1 1 33.333%;
-    flex: 1 0 300px;
+    box-sizing: border-box;
+    flex: 1 1 300px;
     // min-width: 300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 40px;
     overflow: hidden;
 }

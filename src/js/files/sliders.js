@@ -40,8 +40,9 @@ function initSliders() {
 			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
+			grabCursor: true,
 
-			touchRatio: 0,
+			touchRatio: 1,
 			//simulateTouch: false,
 			loop: true,
 			//preloadImages: false,

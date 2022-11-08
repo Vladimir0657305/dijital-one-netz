@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" data-watch="navigator">
 	<div class="header__container">
 		<div class="header-body">
 			<div class="header-logo">
@@ -7,16 +7,16 @@
 			<div class="header-menu">
 				<div class="header-menu__block">
 					<ul class="menu-block__first">
-						<li><a href="#" >Home</a></li>
-						<li><a href="#">About Us
+						<li><a data-goto-header  data-goto=".header" href="#" >Home</a></li>
+						<li><a href="#" data-goto-top="120" data-goto=".about-body">About Us
 							<svg  viewBox="0 0 32 32">
 								<path d="M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z"/>
 							</svg>
 						</a>
 						<ul class="menu-block__second">
-							<li><a href="#">Team</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">FAQ</a></li>
+							<li><a data-goto-top="120" data-goto=".team" href="#">Team</a></li>
+							<li><a data-goto-top="60" data-goto=".pricing" href="#">Pricing</a></li>
+							<li><a data-goto-top="60" data-goto=".faq" href="#">FAQ</a></li>
 							<li><a href="#">More Links
 								<svg viewBox="0 0 32 32" >
 									<path d="M10.5858 6.34317L12 4.92896L19.0711 12L12 19.0711L10.5858 17.6569L16.2427 12L10.5858 6.34317Z"
@@ -31,11 +31,11 @@
 							</li>
 						</ul>
 						</li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#" data-goto-top="90" data-goto=".portfolio">Portfolio</a></li>
+						<li><a data-goto-top="60" data-goto=".services" href="#">Services</a></li>
+						<li><a data-goto-top="130" data-goto=".testimonials" href="#">Testimonials</a></li>
+						<li><a data-goto-top="100" data-goto=".blog" href="#">Blog</a></li>
+						<li><a data-goto-top="40" data-goto=".contact" href="#">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,31 +50,31 @@
 			
 				<ul class="nav__ul">
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Home</a>
+						<a data-goto-header  data-goto=".header" href="#" class="nav__link">Home</a>
 					</li>
 			
 					<li class="nav__li" >
-						<a href="#" class="nav__link">About Us</a>
+						<a data-goto-top="120" data-goto=".about-body" href="#" class="nav__link">About Us</a>
 					</li>
 			
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Portfolio</a>
+						<a data-goto-top="90" data-goto=".portfolio" href="#" class="nav__link">Portfolio</a>
 					</li>
 			
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Services</a>
+						<a data-goto-top="60" data-goto=".services" href="#" class="nav__link">Services</a>
 					</li>
 			
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Testimonials</a>
+						<a data-goto-top="130" data-goto=".testimonials" href="#" class="nav__link">Testimonials</a>
 					</li>
 					
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Blog</a>
+						<a data-goto-top="100" data-goto=".blog" href="#" class="nav__link">Blog</a>
 					</li>
 					
 					<li class="nav__li" >
-						<a href="#" class="nav__link">Contact</a>
+						<a data-goto-top="40" data-goto=".contact" href="#" class="nav__link">Contact</a>
 					</li>
 				</ul>
 		</div>
