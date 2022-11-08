@@ -10,9 +10,6 @@
     flex: 1 0 50%;
 }
 
-.site-left__body {
-}
-
 .site-left__items {
     display: flex;
     flex-wrap: wrap;
@@ -73,5 +70,19 @@
         height: auto;
         vertical-align: middle;
         border-style: none;
+    }
+}
+
+.site-left__items._activetextmain, .site-left__item._activetextmain {
+    .site-left__item._temp1 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0s;
+    }
+
+    .site-left__item._temp2 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.2s;
     }
 }

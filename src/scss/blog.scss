@@ -1,0 +1,105 @@
+.blog {}
+
+.blog__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-title {
+    color: #007bff;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.blog-body {}
+
+.blog-body__items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.blog-body__item {
+    // flex: 1 1 33.333%;
+    flex: 1 0 300px;
+    // min-width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+}
+
+.blog-body__img img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    cursor: pointer;
+}
+
+.blog-body__title {
+    font-size: 20px;
+    max-width: 90%;
+    margin-bottom: 0.5rem;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.blog-body__subtitle {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    & span:nth-child(2), span:nth-child(4) {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    & a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+}
+
+.blog-body__text {
+    max-width: 310px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.blog-body__textLink a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.blog-body__anim._activetextmain {
+    .blog-body__item._temp1 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0s;
+    }
+
+    .blog-body__item._temp2 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.2s;
+    }
+    
+    .blog-body__item._temp3 {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.310, -0.250, 0.000, 1.390) 0.4s;
+    }
+}
